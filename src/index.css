@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+  @apply font-sans bg-[#F5F5F5] text-[#1E1E1E];
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

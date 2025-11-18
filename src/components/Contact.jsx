@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { PHONE_LINK, PHONE_FORMATTED, WHATSAPP_URL, SOCIAL_LINKS } from "../data/constants";
 
 export default function Contact() {
   return (
@@ -13,16 +14,16 @@ export default function Contact() {
       <div className="flex flex-col items-center gap-6">
         {/* Phone */}
         <a
-          href="tel:+34690871080"
+          href={PHONE_LINK}
           className="flex items-center gap-3 text-yellow-500 text-lg md:text-xl font-semibold hover:text-yellow-600 transition"
-          aria-label="Llamar a Mondéjar Taxi al 690 87 10 80"
+          aria-label={`Llamar a Mondéjar Taxi al ${PHONE_FORMATTED}`}
         >
-          <FontAwesomeIcon icon={faPhoneAlt} /> +34 690 87 10 80
+          <FontAwesomeIcon icon={faPhoneAlt} /> {PHONE_FORMATTED}
         </a>
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/34690871080"
+          href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-green-500 text-lg md:text-xl font-semibold hover:text-green-600 transition"
@@ -34,7 +35,7 @@ export default function Contact() {
         {/* RRSS */}
         <div className="flex gap-6 mt-4 text-3xl md:text-4xl justify-center">
           <a
-            href="https://www.facebook.com/mondejartaxisl"
+            href={SOCIAL_LINKS.facebook}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition"
@@ -43,7 +44,7 @@ export default function Contact() {
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
-            href="https://www.instagram.com/mondejartaxisl"
+            href={SOCIAL_LINKS.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-500 hover:text-pink-700 transition"
@@ -52,7 +53,7 @@ export default function Contact() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
-            href="https://www.tiktok.com/@mondejartaxisl"
+            href={SOCIAL_LINKS.tiktok}
             target="_blank"
             rel="noopener noreferrer"
             className="text-black hover:text-gray-800 transition"

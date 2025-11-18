@@ -1,32 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCity,
-  faPlane,
-  faRoute,
   faCreditCard,
   faMoneyBillWave,
   faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { TARIFFS_DATA } from "../data/tariffs";
 
 export default function Tariffs() {
-  const tariffs = [
-    { icon: faCity, name: "Trayecto urbano", price: "Desde 5 €" },
-    {
-      icon: faRoute,
-      name: "Socuéllamos – Tomelloso",
-      price: "30 € ida y vuelta / 20 € solo ida",
-    },
-    {
-      icon: faRoute,
-      name: "Socuéllamos – Alcázar de San Juan",
-      price: "40 € ida y vuelta / 30 € solo ida",
-    },
-    {
-      icon: faPlane,
-      name: "Aeropuertos Madrid / Albacete",
-      price: "Consultar tarifas según destino",
-    },
-  ];
+  const tariffs = TARIFFS_DATA;
 
   return (
     <section className="py-20 px-6 bg-gray-50" id="tarifas" aria-labelledby="tarifas-title">

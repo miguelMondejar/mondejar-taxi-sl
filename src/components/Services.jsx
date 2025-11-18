@@ -1,40 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRoute, faPlaneDeparture, faCalendarCheck, faCarSide, faHeartPulse, faPaw, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { faPaw, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { SERVICES_DATA } from "../data/services";
 
 export default function Services() {
-  const services = [
-    {
-      icon: faRoute,
-      title: "Traslados locales",
-      desc: "Servicio urbano y trayectos entre poblaciones cercanas.",
-      details: [
-        "Socuéllamos–Tomelloso, Socuéllamos–Alcázar de San Juan, etc."
-      ],
-    },
-    {
-      icon: faPlaneDeparture,
-      title: "Aeropuertos",
-      desc: "Traslados a aeropuertos de Madrid, Albacete, Ciudad Real y más.",
-      details: ["Se realizan servicios de ida y vuelta o solo ida según necesidad."],
-    },
-    {
-      icon: faCalendarCheck,
-      title: "Reservas concertadas",
-      desc: "Viajes planificados a tu medida.",
-      details: ["Organizamos tu traslado con antelación para tu comodidad."],
-    },
-    {
-      icon: faCarSide,
-      title: "Servicios especiales",
-      desc: "Eventos, bodas y otros servicios personalizados.",
-      details: ["Consúltanos para más información y organización."],
-    },
-    {
-      icon: faHeartPulse,
-      title: "Hospitales y mutuas",
-      desc: "Traslados con acompañamiento a centros sanitarios."
-    },
-  ];
+  const services = SERVICES_DATA;
 
   return (
     <section className="py-20 px-6 bg-white-50" id="servicios">

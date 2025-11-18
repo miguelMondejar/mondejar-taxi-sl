@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { PHONE_LINK, COMPANY_NAME, MENU_ITEMS } from "../data/constants";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,28 +15,21 @@ export default function Navbar() {
           href="#inicio"
           className="text-2xl md:text-3xl font-bold text-[#1E1E1E] hover:text-gray-700 transition"
         >
-          MONDÉJAR TAXI, S.L.
+          {COMPANY_NAME}
         </a>
 
         {/* Menú escritorio */}
         <div className="hidden md:flex flex-1 justify-center gap-8">
-          <a href="#servicios" className="text-[#1E1E1E] hover:text-gray-700 transition font-semibold">
-            Servicios
-          </a>
-          <a href="#tarifas" className="text-[#1E1E1E] hover:text-gray-700 transition font-semibold">
-            Tarifas
-          </a>
-          <a href="#vehiculo" className="text-[#1E1E1E] hover:text-gray-700 transition font-semibold">
-            Vehículo
-          </a>
-          <a href="#contacto" className="text-[#1E1E1E] hover:text-gray-700 transition font-semibold">
-            Contacto
-          </a>
+          {MENU_ITEMS.map((item) => (
+            <a key={item.href} href={item.href} className="text-[#1E1E1E] hover:text-gray-700 transition font-semibold">
+              {item.label}
+            </a>
+          ))}
         </div>
 
         {/* Botón Llamar */}
         <a
-          href="tel:+34690871080"
+          href={PHONE_LINK}
           className="flex items-center gap-2 bg-[#1E1E1E] text-white px-4 py-2 rounded-lg hover:opacity-80 transition font-semibold"
         >
           <FontAwesomeIcon icon={faPhoneAlt} /> Llamar
@@ -56,18 +50,16 @@ export default function Navbar() {
       {/* Menú desplegable móvil */}
       {menuOpen && (
         <div id="mobile-menu" className="md:hidden bg-[#FFD60A] flex flex-col items-center gap-4 py-4">
-          <a href="#servicios" onClick={() => setMenuOpen(false)} className="text-[#1E1E1E] font-semibold hover:text-gray-700 transition">
-            Servicios
-          </a>
-          <a href="#tarifas" onClick={() => setMenuOpen(false)} className="text-[#1E1E1E] font-semibold hover:text-gray-700 transition">
-            Tarifas
-          </a>
-          <a href="#vehiculo" onClick={() => setMenuOpen(false)} className="text-[#1E1E1E] font-semibold hover:text-gray-700 transition">
-            Vehículo
-          </a>
-          <a href="#contacto" onClick={() => setMenuOpen(false)} className="text-[#1E1E1E] font-semibold hover:text-gray-700 transition">
-            Contacto
-          </a>
+          {MENU_ITEMS.map((item) => (
+            <a 
+              key={item.href}
+              href={item.href} 
+              onClick={() => setMenuOpen(false)} 
+              className="text-[#1E1E1E] font-semibold hover:text-gray-700 transition"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       )}
     </nav>

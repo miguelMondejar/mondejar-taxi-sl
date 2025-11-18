@@ -1,48 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSnowflake,
-  faSuitcase,
-  faCreditCard,
-  faUserFriends,
-  faCogs,
-  faLeaf,
-  faPaw,
   faChevronLeft,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
+import { CAR_MODEL, AUTOPLAY_INTERVAL } from "../data/constants";
+import { CAR_FEATURES } from "../data/car";
 
 export default function Car() {
-  const features = [
-    {
-      icon: faSnowflake,
-      text: "Aire acondicionado — Máxima comodidad"
-    },
-    {
-      icon: faSuitcase,
-      text: "Amplio maletero — Espacio para tu equipaje"
-    },
-    {
-      icon: faCreditCard,
-      text: "Pago con efectivo, tarjeta o Bizum"
-    },
-    {
-      icon: faUserFriends,
-      text: "Hasta 4 pasajeros — Viaja con quien quieras"
-    },
-    {
-      icon: faCogs,
-      text: "Motor eficiente — Silencioso y potente"
-    },
-    {
-      icon: faLeaf,
-      text: "Etiqueta ambiental ECO — Cuidamos el planeta"
-    },
-    {
-      icon: faPaw,
-      text: "Se aceptan mascotas — Tu compañero bienvenido"
-    },
-  ];
+  const features = CAR_FEATURES;
 
   // galería de imágenes
   const imageModules = import.meta.glob("../assets/seat-leon*.{jpg,jpeg,webp}", { eager: true });
@@ -50,7 +16,6 @@ export default function Car() {
   const [index, setIndex] = useState(0);
 
   // autoplay + pausa on hover
-  const autoplayInterval = 4000;
   const autoplayRef = useRef(null);
   const isPausedRef = useRef(false);
 
@@ -60,7 +25,7 @@ export default function Car() {
       if (!isPausedRef.current) {
         setIndex((i) => (i + 1) % images.length);
       }
-    }, autoplayInterval);
+    }, AUTOPLAY_INTERVAL);
 
     // teclado: izquierda/derecha para navegar
     const onKey = (e) => {
@@ -99,7 +64,7 @@ export default function Car() {
             >
               <img
                 src={images[index]}
-                alt={`Vehículo - imagen ${index + 1}`}
+                alt={`SEAT León FR - vista ${index + 1} de ${images.length}`}
                 className="object-cover w-full h-[350px] lg:h-[500px] transition-all duration-300"
               />
 
@@ -136,7 +101,7 @@ export default function Car() {
                     i === index ? "border-yellow-500 scale-110" : "border-gray-300 hover:border-yellow-300"
                   }`}
                 >
-                  <img src={src} alt={`miniatura ${i + 1}`} className="w-full h-full object-cover" />
+                  <img src={src} alt={`Miniatura del vehículo ${i + 1}`} className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
@@ -144,10 +109,10 @@ export default function Car() {
 
           <div className="w-full lg:w-1/2 text-left">
             <h3 className="text-2xl font-semibold mb-6 text-[#1E1E1E]">
-              SEAT León ST 1.5 FR Special Edition — Comodidad, estilo y seguridad
+              {CAR_MODEL} — Comodidad, estilo y seguridad
             </h3>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Disfruta de un viaje confortable y seguro a bordo de nuestro SEAT León ST 1.5 FR.
+              Disfruta de un viaje confortable y seguro a bordo de nuestro {CAR_MODEL}.
               Un vehículo moderno, amplio y con excelentes
               prestaciones para trayectos urbanos o interurbanos.
             </p>

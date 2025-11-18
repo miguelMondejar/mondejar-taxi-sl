@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import heroImage from "../assets/socuellamos.avif";
 import logo from "../assets/logo_mondejar_taxi.png";
+import { PHONE_LINK, HERO_TITLE, HERO_SUBTITLE } from "../data/constants";
 
 export default function Hero() {
   return (
@@ -21,15 +22,15 @@ export default function Hero() {
         />
 
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Tu taxi de confianza en Socuéllamos
+          {HERO_TITLE}
         </h1>
 
         <p className="text-lg md:text-xl mb-8">
-          Rápido, seguro y profesional
+          {HERO_SUBTITLE}
         </p>
 
         <a
-          href="tel:+34690871080"
+          href={PHONE_LINK}
           className="bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-yellow-600 transition flex items-center gap-3 text-lg shadow-lg"
         >
           <FontAwesomeIcon icon={faPhoneAlt} /> Llamar

@@ -9,6 +9,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/logo_mondejar_taxi.png";
+import { COMPANY_NAME, LOCATION, PHONE_LINK, PHONE_FORMATTED, SOCIAL_LINKS } from "../data/constants";
 
 export default function Footer() {
   return (
@@ -19,19 +20,19 @@ export default function Footer() {
         <div className="flex items-center gap-5">
           <img
             src={logo}
-            alt="Mondéjar Taxi S.L."
+            alt={COMPANY_NAME}
             className="w-28 md:w-32 drop-shadow-lg"
           />
           <div className="text-left">
-            <p className="font-bold text-lg text-white">Mondéjar Taxi S.L.</p>
-            <p>Socuéllamos (Ciudad Real)</p>
+            <p className="font-bold text-lg text-white">{COMPANY_NAME}</p>
+            <p>{LOCATION}</p>
             <a
-              href="tel:+34690871080"
+              href={PHONE_LINK}
               className="flex items-center gap-2 text-yellow-500 hover:text-yellow-600 transition mt-2"
             >
               <FontAwesomeIcon icon={faPhoneAlt} />
               <FontAwesomeIcon icon={faWhatsapp} />
-              <span>+34 690 87 10 80</span>
+              <span>{PHONE_FORMATTED}</span>
             </a>
           </div>
         </div>
@@ -39,7 +40,7 @@ export default function Footer() {
         {/* RRSS */}
         <div className="flex gap-6 text-2xl md:text-3xl">
           <a
-            href="https://www.facebook.com/mondejartaxisl"
+            href={SOCIAL_LINKS.facebook}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition"
@@ -47,7 +48,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
-            href="https://www.instagram.com/mondejartaxisl"
+            href={SOCIAL_LINKS.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-500 hover:text-pink-700 transition"
@@ -55,7 +56,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
-            href="https://www.tiktok.com/mondejartaxisl"
+            href={SOCIAL_LINKS.tiktok}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-100 hover:text-gray-300 transition"
@@ -68,7 +69,7 @@ export default function Footer() {
       <div className="text-center mt-10">
         <p className="mb-12 text-white-600 text-lg md:text-xl">
           <a
-            href="https://www.google.com/maps/place/Mondejar+Taxi+SL/@39.2831,-3.4267,15z"
+            href={SOCIAL_LINKS.googleReview}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 hover:text-yellow-400 transition"
@@ -80,7 +81,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Mondéjar Taxi, S.L. – Todos los derechos reservados.
+        © {new Date().getFullYear()} {COMPANY_NAME} – Todos los derechos reservados.
       </div>
     </footer>
   );

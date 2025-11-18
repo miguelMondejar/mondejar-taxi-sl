@@ -41,6 +41,7 @@ export default function Footer() {
           <a
             href="https://www.facebook.com/mondejartaxisl"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition"
           >
             <FontAwesomeIcon icon={faFacebook} />
@@ -48,6 +49,7 @@ export default function Footer() {
           <a
             href="https://www.instagram.com/mondejartaxisl"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-pink-500 hover:text-pink-700 transition"
           >
             <FontAwesomeIcon icon={faInstagram} />
@@ -55,6 +57,7 @@ export default function Footer() {
           <a
             href="https://www.tiktok.com/mondejartaxisl"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-100 hover:text-gray-300 transition"
           >
             <FontAwesomeIcon icon={faTiktok} />
@@ -65,10 +68,10 @@ export default function Footer() {
       <div className="text-center mt-10">
         <p className="mb-12 text-white-600 text-lg md:text-xl">
           <a
-            href="https://g.page/r/XXXXXX/review"
+            href="https://www.google.com/maps/place/Mondejar+Taxi+SL/@39.2831,-3.4267,15z"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 btn"
+            className="inline-flex items-center gap-3 hover:text-yellow-400 transition"
           >
             <span>Déjanos tu reseña en Google</span>
             <span aria-hidden>⭐⭐⭐⭐⭐</span>

@@ -40,7 +40,7 @@ export default function Tariffs() {
           servicio.
         </p>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-10" role="list" aria-label="Listado de tarifas orientativas">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mb-10" role="list" aria-label="Listado de tarifas orientativas">
           {tariffs.map((t, i) => (
             <div
               key={i}
@@ -62,39 +62,35 @@ export default function Tariffs() {
         <div className="w-24 h-[3px] bg-yellow-500 mx-auto mb-10"></div>
 
         <div className="mt-10">
-          <h3 className="text-2xl font-semibold mb-6 text-[#1E1E1E]">
+          <p className="text-gray-600 text-lg font-semibold mb-6">
             Métodos de pago aceptados
-          </h3>
+          </p>
 
-          <ul className="flex flex-col sm:flex-row justify-center items-center gap-8 text-gray-700 text-lg md:text-xl">
-            <li
-              className="flex items-center gap-3"
-              aria-label="Pago en efectivo"
-            >
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 px-6 py-3 rounded-full border-2 border-green-300 shadow-md">
               <FontAwesomeIcon
                 icon={faMoneyBillWave}
-                className="text-green-500 text-3xl"
+                className="text-2xl text-green-600"
               />
-              <span>Efectivo</span>
-            </li>
-            <li
-              className="flex items-center gap-3"
-              aria-label="Pago con tarjeta"
-            >
+              <span className="text-gray-700 font-semibold">Efectivo</span>
+            </div>
+
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-50 to-blue-100 px-6 py-3 rounded-full border-2 border-blue-300 shadow-md">
               <FontAwesomeIcon
                 icon={faCreditCard}
-                className="text-blue-500 text-3xl"
+                className="text-2xl text-blue-600"
               />
-              <span>Tarjeta</span>
-            </li>
-            <li className="flex items-center gap-3" aria-label="Pago con Bizum">
+              <span className="text-gray-700 font-semibold">Tarjeta</span>
+            </div>
+
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-50 to-purple-100 px-6 py-3 rounded-full border-2 border-purple-300 shadow-md">
               <FontAwesomeIcon
                 icon={faMobileAlt}
-                className="text-purple-500 text-3xl"
+                className="text-2xl text-purple-600"
               />
-              <span>Bizum</span>
-            </li>
-          </ul>
+              <span className="text-gray-700 font-semibold">Bizum</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

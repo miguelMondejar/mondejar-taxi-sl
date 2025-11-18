@@ -6,21 +6,21 @@ import {
   faCreditCard,
   faUserFriends,
   faCogs,
+  faLeaf,
+  faPaw,
   faChevronLeft,
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
-import carExterior from "../assets/seat-leon-1.jpg";
-import carInterior from "../assets/seat-leon-inside.jpg";
 
 export default function Car() {
   const features = [
     {
       icon: faSnowflake,
-      text: "Aire acondicionado"
+      text: "Aire acondicionado — Máxima comodidad"
     },
     {
       icon: faSuitcase,
-      text: "Amplio maletero"
+      text: "Amplio maletero — Espacio para tu equipaje"
     },
     {
       icon: faCreditCard,
@@ -28,16 +28,25 @@ export default function Car() {
     },
     {
       icon: faUserFriends,
-      text: "Hasta 4 pasajeros"
+      text: "Hasta 4 pasajeros — Viaja con quien quieras"
     },
     {
       icon: faCogs,
-      text: "Motor eficiente y silencioso"
+      text: "Motor eficiente — Silencioso y potente"
+    },
+    {
+      icon: faLeaf,
+      text: "Etiqueta ambiental ECO — Cuidamos el planeta"
+    },
+    {
+      icon: faPaw,
+      text: "Se aceptan mascotas — Tu compañero bienvenido"
     },
   ];
 
   // galería de imágenes
-  const images = [carExterior, carInterior];
+  const imageModules = import.meta.glob("../assets/seat-leon*.{jpg,jpeg,webp}", { eager: true });
+  const images = Object.values(imageModules).map((m) => m.default);
   const [index, setIndex] = useState(0);
 
   // autoplay + pausa on hover
@@ -91,7 +100,7 @@ export default function Car() {
               <img
                 src={images[index]}
                 alt={`Vehículo - imagen ${index + 1}`}
-                className="object-cover w-full h-[350px] lg:h-[400px] transition-all duration-300"
+                className="object-cover w-full h-[350px] lg:h-[500px] transition-all duration-300"
               />
 
               {/* Controles Prev/Next */}
@@ -114,7 +123,7 @@ export default function Car() {
             </div>
 
             {/* Miniaturas */}
-            <div className="mt-4 flex gap-3 justify-center" role="tablist" aria-label="Miniaturas del vehículo">
+            <div className="mt-4 flex gap-1 justify-center" role="tablist" aria-label="Miniaturas del vehículo">
               {images.map((src, i) => (
                 <button
                   key={i}
@@ -123,8 +132,8 @@ export default function Car() {
                   aria-label={`Ver imagen ${i + 1}`}
                   aria-selected={i === index}
                   role="tab"
-                  className={`w-20 h-12 overflow-hidden rounded-md border-2 focus:outline-none ${
-                    i === index ? "border-yellow-500" : "border-transparent"
+                  className={`w-20 h-12 overflow-hidden rounded-md border-2 focus:outline-none transition-all hover:scale-110 ${
+                    i === index ? "border-yellow-500 scale-110" : "border-gray-300 hover:border-yellow-300"
                   }`}
                 >
                   <img src={src} alt={`miniatura ${i + 1}`} className="w-full h-full object-cover" />

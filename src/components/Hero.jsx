@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import heroImage from "../assets/socuellamos.avif";
 import logo from "../assets/logo_mondejar_taxi.png";
-import { PHONE_LINK, HERO_TITLE, HERO_SUBTITLE } from "../data/constants";
+import { PHONE_LINK, HERO_TITLE, HERO_SUBTITLE, LICENSE } from "../data/constants";
 
 export default function Hero() {
   return (
@@ -18,14 +18,18 @@ export default function Hero() {
         <img
           src={logo}
           alt="Taxi Mondéjar S.L."
-          className="w-40 md:w-56 mb-6 drop-shadow-lg"
+          className="w-40 md:w-56 mb-3 drop-shadow-lg"
         />
 
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <p className="text-sm md:text-base text-gray-200 mb-6">
+          {LICENSE}
+        </p>
+
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           {HERO_TITLE}
         </h1>
 
-        <p className="text-lg md:text-xl mb-8">
+        <p className="text-lg md:text-xl mb-10 text-gray-200">
           {HERO_SUBTITLE}
         </p>
 

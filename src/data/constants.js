@@ -7,6 +7,7 @@ export const PHONE_LINK = "tel:+34690871080";
 // Company Information
 export const COMPANY_NAME = "Mondéjar Taxi S.L.";
 export const LOCATION = "Socuéllamos (Ciudad Real)";
+export const LICENSE = "Licencia municipal nº 2";
 
 // Social Links
 export const SOCIAL_LINKS = {

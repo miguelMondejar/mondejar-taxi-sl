@@ -9,7 +9,7 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/logo_mondejar_taxi.png";
-import { COMPANY_NAME, LOCATION, PHONE_LINK, PHONE_FORMATTED, SOCIAL_LINKS } from "../data/constants";
+import { COMPANY_NAME, LOCATION, PHONE_LINK, PHONE_FORMATTED, SOCIAL_LINKS, LICENSE } from "../data/constants";
 
 export default function Footer() {
   return (
@@ -25,6 +25,7 @@ export default function Footer() {
           />
           <div className="text-left">
             <p className="font-bold text-lg text-white">{COMPANY_NAME}</p>
+            <p>{LICENSE}</p>
             <p>{LOCATION}</p>
             <a
               href={PHONE_LINK}

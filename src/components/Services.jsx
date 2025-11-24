@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaw, faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { SERVICES_DATA } from "../data/services";
 
 export default function Services() {
@@ -29,13 +29,10 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="w-24 h-[3px] bg-yellow-500 mx-auto mb-10"></div>
-
         <div className="mt-10">
           <p className="text-gray-600 text-lg font-semibold mb-6">
-            Nuestro compromiso adicional:
+            Nuestro compromiso adicional
           </p>
-
           <div className="flex flex-wrap justify-center gap-6">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-green-50 to-green-100 px-6 py-3 rounded-full border-2 border-green-300 shadow-md">
               <FontAwesomeIcon
@@ -43,14 +40,6 @@ export default function Services() {
                 className="text-2xl text-green-600"
               />
               <span className="text-gray-700 font-semibold">Etiqueta ambiental ECO</span>
-            </div>
-
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-50 to-orange-100 px-6 py-3 rounded-full border-2 border-orange-300 shadow-md">
-              <FontAwesomeIcon
-                icon={faPaw}
-                className="text-2xl text-orange-600"
-              />
-              <span className="text-gray-700 font-semibold">Se aceptan mascotas</span>
             </div>
           </div>
         </div>

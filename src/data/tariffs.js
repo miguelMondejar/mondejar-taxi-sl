@@ -1,28 +1,19 @@
-import {
-  faCity,
-  faPlane,
-  faRoute,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCity, faRoute, faPlane } from "@fortawesome/free-solid-svg-icons";
 
-export const TARIFFS_DATA = [
-  { 
-    icon: faCity, 
-    name: "Trayecto urbano", 
-    price: "Desde 5 €" 
-    },
+export const SERVICE_TYPES = [
   {
-    icon: faRoute,
-    name: "Socuéllamos – Tomelloso",
-    price: "30 € ida y vuelta / 20 € solo ida",
+    icon: faCity,
+    name: "Trayectos urbanos",
+    desc: "Desplazamientos dentro de Socuéllamos con rapidez y comodidad.",
   },
   {
     icon: faRoute,
-    name: "Socuéllamos – Alcázar de San Juan",
-    price: "40 € ida y vuelta / 30 € solo ida",
+    name: "Viajes interurbanos",
+    desc: "Traslados a cualquier localidad de España sin límite de distancia.",
   },
   {
     icon: faPlane,
-    name: "Aeropuertos Madrid / Albacete",
-    price: "Consultar tarifas según destino",
+    name: "Aeropuertos",
+    desc: "Servicio a aeropuertos en territorio nacional. Puntualidad garantizada.",
   },
 ];

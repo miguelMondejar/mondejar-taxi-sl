@@ -5,7 +5,6 @@ import {
   faUserFriends,
   faCogs,
   faLeaf,
-  faPaw,
 } from "@fortawesome/free-solid-svg-icons";
 import { CAR_MOTOR_POWER } from "./constants";
 
@@ -28,14 +27,10 @@ export const CAR_FEATURES = [
   },
   {
     icon: faCogs,
-    text: `Motor eficiente — ${CAR_MOTOR_POWER} CV silencioso y potente`
+    text: `Motor eficiente — ${CAR_MOTOR_POWER}, silencioso y potente`
   },
   {
     icon: faLeaf,
     text: "Etiqueta ambiental ECO — Cuidamos el planeta"
-  },
-  {
-    icon: faPaw,
-    text: "Se aceptan mascotas — Tu compañero bienvenido"
   },
 ];

@@ -13,7 +13,7 @@ export const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/mondejartaxisl",
   instagram: "https://www.instagram.com/mondejartaxisl",
   tiktok: "https://www.tiktok.com/@mondejartaxisl",
-  googleReview: "https://www.google.com/maps/place/Mondejar+Taxi+SL/@39.2831,-3.4267,15z",
+  googleReview: "https://www.google.com/",
 };
 
 // Navigation Menu
@@ -30,7 +30,7 @@ export const HERO_SUBTITLE = "Rápido, seguro y profesional";
 
 // Car Information
 export const CAR_MODEL = "SEAT León ST 1.5 FR Special Edition";
-export const CAR_MOTOR_POWER = "130 CV";
+export const CAR_MOTOR_POWER = "150 CV";
 export const AUTOPLAY_INTERVAL = 4000; // milliseconds
 
 // Section IDs

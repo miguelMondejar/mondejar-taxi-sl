@@ -130,6 +130,56 @@ export default function Car() {
             </ul>
           </div>
         </div>
+
+        {/* Asientos para bebés y niños */}
+        <div className="mt-16 pt-12 border-t-2 border-gray-200">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+            <div className="w-full lg:w-1/2 text-left">
+              <h3 className="text-2xl font-semibold mb-6 text-[#1E1E1E]">
+                👶 Asientos para bebés y niños
+              </h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Contamos con asientos de seguridad para bebés y niños disponibles bajo <strong>previo aviso</strong>.
+                Si necesitas este servicio, por favor avísanos con anticipación al reservar tu viaje y nos aseguraremos de tener el equipo adecuado según la edad de tu hijo.
+              </p>
+              <div className="bg-blue-50 border-l-4 border-yellow-500 p-4 rounded-lg">
+                <p className="text-gray-700 font-semibold mb-2">Disponibles:</p>
+                <ul className="list-disc list-inside text-gray-700 space-y-1">
+                  <li><strong>Asiento infantil grande:</strong> Para bebés (hasta 75 cm)</li>
+                  <li><strong>Asiento infantil pequeño:</strong> Para niños mayores (75-150 cm)</li>
+                </ul>
+                <p className="text-sm text-gray-600 mt-4">
+                  📞 Contacta con nosotros para confirmar disponibilidad
+                </p>
+              </div>
+            </div>
+
+            <div className="w-full lg:w-1/2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="text-center">
+                  <img
+                    src={new URL("../assets/asiento-infantil-pequeño.png", import.meta.url).href}
+                    alt="Asiento infantil pequeño para bebés"
+                    className="w-full h-96 object-cover rounded-lg shadow-lg mb-3"
+                    loading="lazy"
+                  />
+                  <h4 className="font-semibold text-gray-800">Asiento Pequeño</h4>
+                  <p className="text-sm text-gray-600">hasta 75 cm</p>
+                </div>
+                <div className="text-center">
+                  <img
+                    src={new URL("../assets/asiento-infantil-grande.png", import.meta.url).href}
+                    alt="Asiento infantil grande para niños"
+                    className="w-full h-96 object-cover rounded-lg shadow-lg mb-3"
+                    loading="lazy"
+                  />
+                  <h4 className="font-semibold text-gray-800">Asiento Grande</h4>
+                  <p className="text-sm text-gray-600">75-150 cm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

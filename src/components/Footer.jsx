@@ -8,7 +8,6 @@ import {
   faInstagram,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/logo_mondejar_taxi.png";
 import { COMPANY_NAME, LOCATION, PHONE_LINK, PHONE_FORMATTED, SOCIAL_LINKS, LICENSE } from "../data/constants";
 
 export default function Footer() {
@@ -19,7 +18,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex items-center gap-5">
           <img
-            src={logo}
+            src="/logo_mondejar_taxi.png"
             alt={COMPANY_NAME}
             className="w-28 md:w-32 drop-shadow-lg"
           />

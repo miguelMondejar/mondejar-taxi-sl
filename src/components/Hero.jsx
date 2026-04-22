@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import heroImage from "../assets/socuellamos.avif";
-import logo from "../assets/logo_mondejar_taxi.png";
 import { PHONE_LINK, HERO_TITLE, HERO_SUBTITLE, LICENSE } from "../data/constants";
 
 export default function Hero() {
@@ -16,7 +15,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
 
         <img
-          src={logo}
+          src="/logo_mondejar_taxi.png"
           alt="Taxi Mondéjar S.L."
           className="w-40 md:w-56 mb-3 drop-shadow-lg"
         />

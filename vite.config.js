@@ -6,12 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     // Optimizaciones para SEO y rendimiento
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-      },
-    },
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         manualChunks: {

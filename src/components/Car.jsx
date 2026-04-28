@@ -7,12 +7,19 @@ import {
 import { CAR_MODEL, AUTOPLAY_INTERVAL } from "../data/constants";
 import { CAR_FEATURES } from "../data/car";
 
+import mondejar1 from "../assets/mondejar_taxi_ayuntamiento_socuellamos_1.jpg";
+import mondejar2 from "../assets/mondejar_taxi_ayuntamiento_socuellamos_2.jpg";
+import mondejar3 from "../assets/mondejar_taxi_ayuntamiento_socuellamos_3.jpg";
+
 export default function Car() {
   const features = CAR_FEATURES;
 
-  // galería de imágenes
-  const imageModules = import.meta.glob("../assets/seat-leon*.{jpg,jpeg,webp}", { eager: true });
-  const images = Object.values(imageModules).map((m) => m.default);
+  // Cargar todas las imágenes del seat-leon
+  const seatImages = import.meta.glob("../assets/seat-leon*.jpeg", { eager: true });
+  const seatArray = Object.values(seatImages).map((m) => m.default);
+
+  // Combinar: fotos nuevas PRIMERO, luego todas las del seat-leon
+  const images = [mondejar1, mondejar2, mondejar3, ...seatArray];
   const [index, setIndex] = useState(0);
 
   // autoplay + pausa on hover

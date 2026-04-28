@@ -16,7 +16,7 @@ export default function Hero() {
 
         <img
           src="/logo_mondejar_taxi.png"
-          alt="Taxi Mondéjar S.L."
+          alt="Mondéjar Taxi - Taxis profesionales en Socuéllamos"
           className="w-40 md:w-56 mb-3 drop-shadow-lg"
         />
 
@@ -30,6 +30,10 @@ export default function Hero() {
 
         <p className="text-lg md:text-xl mb-10 text-gray-200">
           {HERO_SUBTITLE}
+        </p>
+
+        <p className="text-sm md:text-lg mb-8 text-yellow-300 font-semibold">
+          ✓ Servicio 24 horas • Pago con tarjeta, efectivo y Bizum
         </p>
 
         <a

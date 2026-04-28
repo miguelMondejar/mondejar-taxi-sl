@@ -11,10 +11,10 @@ export const LICENSE = "Licencia municipal nº 2";
 
 // Social Links
 export const SOCIAL_LINKS = {
-  facebook: "https://www.facebook.com/mondejartaxisl",
-  instagram: "https://www.instagram.com/mondejartaxisl",
-  tiktok: "https://www.tiktok.com/@mondejartaxisl",
-  googleReview: "https://www.google.com/",
+  facebook: "https://www.facebook.com/profile.php?id=61574288680782",
+  instagram: "https://www.instagram.com/socuellamosmondejartaxisl",
+  tiktok: "https://www.tiktok.com/@mondejar.taxi",
+  googleReview: "https://www.google.com/maps/place/Mondejar+taxi+sl/@39.2819581,-2.7883182,841m/data=!3m1!1e3!4m8!3m7!1s0xd68f5006f4a0f23:0x373e6cbfc62ef948!8m2!3d39.281954!4d-2.7857433!9m1!1b1!16s%2Fg%2F11nhh9xvgb?authuser=3&entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D",
 };
 
 // Navigation Menu

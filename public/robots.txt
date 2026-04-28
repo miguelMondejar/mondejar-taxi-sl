@@ -1,5 +1,15 @@
 User-agent: *
 Allow: /
 Disallow: /node_modules/
+Disallow: /.git/
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
 
 Sitemap: https://mondejartaxisocuellamos.es/sitemap.xml

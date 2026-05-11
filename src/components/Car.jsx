@@ -165,7 +165,7 @@ export default function Car() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="text-center">
                   <img
-                    src={new URL("../assets/asiento-infantil-pequeño.png", import.meta.url).href}
+                    src={new URL("../assets/asiento-infantil-pequeño.webp", import.meta.url).href}
                     alt="Asiento infantil pequeño para bebés"
                     className="w-full h-96 object-cover rounded-lg shadow-lg mb-3"
                     loading="lazy"
@@ -175,7 +175,7 @@ export default function Car() {
                 </div>
                 <div className="text-center">
                   <img
-                    src={new URL("../assets/asiento-infantil-grande.png", import.meta.url).href}
+                    src={new URL("../assets/asiento-infantil-grande.webp", import.meta.url).href}
                     alt="Asiento infantil grande para niños"
                     className="w-full h-96 object-cover rounded-lg shadow-lg mb-3"
                     loading="lazy"

@@ -10,34 +10,13 @@ export const SEO_CONFIG = {
     home: {
       title: "Taxis en Socuéllamos - Mondéjar Taxi Profesional 24h",
       description: "🚕 Servicio de taxis profesional en Socuéllamos, Ciudad Real. Traslados urbanos, interurbanos, aeropuertos y servicios especiales. Disponible 24 horas. Rápido, seguro y confiable. ¡Reserva tu taxi ahora!",
-      keywords: "taxis Socuéllamos, taxi Socuéllamos, taxi Ciudad Real, transporte Socuéllamos, taxi 24 horas, traslados urbanos, traslados aeropuerto, servicio taxi profesional",
+      keywords: "taxis Socuéllamos, taxi Socuéllamos, taxi Ciudad Real, transporte Socuéllamos, taxi 24 horas, taxi profesional, traslados urbanos, traslados aeropuerto",
       canonical: "https://mondejartaxisocuellamos.es/",
       ogImage: "https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png",
       ogImageAlt: "Logo de Mondéjar Taxi - Servicio de taxis en Socuéllamos",
       ogImageWidth: "1200",
       ogImageHeight: "630",
     }
-  },
-
-  organization: {
-    name: "Mondéjar Taxi S.L.",
-    legalName: "Mondéjar Taxi S.L.",
-    logo: "https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png",
-    phone: "+34-690-871-080",
-    email: "mondejartaxisl@gmail.com",
-    foundingDate: "2023",
-    address: {
-      streetAddress: "Socuéllamos",
-      addressLocality: "Socuéllamos",
-      addressRegion: "Ciudad Real",
-      postalCode: "13640",
-      addressCountry: "ES"
-    },
-    sameAs: [
-      "https://www.facebook.com/profile.php?id=61574288680782",
-      "https://www.instagram.com/socuellamosmondejartaxisl",
-      "https://www.tiktok.com/@mondejar.taxi"
-    ]
   },
 
   localBusiness: {
@@ -65,5 +44,25 @@ export const SEO_CONFIG = {
       latitude: "39.2947",
       longitude: "-2.7933"
     }
-  }
+  },
+
+  organization: {
+    name: "Mondéjar Taxi S.L.",
+    logo: "https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png",
+    phone: "+34-690-871-080",
+    email: "mondejartaxisl@gmail.com",
+    foundingDate: "2023",
+    address: {
+      streetAddress: "Socuéllamos",
+      addressLocality: "Socuéllamos",
+      addressRegion: "Ciudad Real",
+      postalCode: "13640",
+      addressCountry: "ES"
+    },
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61574288680782",
+      "https://www.instagram.com/socuellamosmondejartaxisl",
+      "https://www.tiktok.com/@mondejar.taxi"
+    ]
+  },
 };

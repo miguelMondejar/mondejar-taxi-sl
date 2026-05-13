@@ -1,8 +1,17 @@
+# Robots.txt para Mondéjar Taxi
+# Configuración optimizada para motores de búsqueda
+
 User-agent: *
 Allow: /
 Disallow: /node_modules/
 Disallow: /.git/
-Crawl-delay: 1
+Disallow: /src/
+Disallow: /.env
+Disallow: /.gitignore
+Disallow: /*.config.js
+Disallow: /package.json
+Disallow: /package-lock.json
+Crawl-delay: 0
 
 User-agent: Googlebot
 Allow: /
@@ -10,6 +19,13 @@ Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0
 
+# Bloquear bots maliciosos
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+Disallow: /
+
+# Sitemap
 Sitemap: https://mondejartaxisocuellamos.es/sitemap.xml

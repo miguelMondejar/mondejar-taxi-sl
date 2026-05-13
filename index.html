@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taxi en Socuéllamos - Mondéjar Taxi Profesional 24h</title>
 
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Meta tags principales -->
     <meta name="description" content="🚕 Taxis en Socuéllamos con Mondéjar Taxi S.L. - Traslados urbanos, interurbanos, aeropuertos y servicios especiales. Rápido, seguro y profesional. ¡Reserva ahora!" />
     <meta name="keywords" content="taxis Socuéllamos, taxi Socuéllamos, taxi Ciudad Real, taxis Ciudad Real, taxi 24 horas Socuéllamos, transporte Socuéllamos, taxi aeropuerto, traslados urbanos, traslados interurbanos" />
     <meta name="author" content="Mondéjar Taxi S.L." />
@@ -12,14 +18,19 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
+    <!-- Favicon y Apple Touch Icon -->
     <link rel="icon" type="image/png" href="/logo_mondejar_taxi.png" />
     <link rel="apple-touch-icon" href="/logo_mondejar_taxi.png" />
+    <link rel="shortcut icon" href="/logo_mondejar_taxi.png" />
 
+    <!-- Meta tags de tema y app -->
     <meta name="theme-color" content="#FFD60A" />
     <meta name="msapplication-TileColor" content="#1E1E1E" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+    <!-- Open Graph para redes sociales -->
     <meta property="og:type" content="business.business" />
     <meta property="og:url" content="https://mondejartaxisocuellamos.es/" />
     <meta property="og:title" content="Taxi en Socuéllamos - Mondéjar Taxi Profesional" />
@@ -27,22 +38,33 @@
     <meta property="og:image" content="https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Logo Mondéjar Taxi" />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Mondéjar Taxi" />
 
+    <!-- Datos de contacto y localización -->
     <meta property="business:contact_data:street_address" content="Socuéllamos" />
     <meta property="business:contact_data:locality" content="Socuéllamos" />
     <meta property="business:contact_data:region" content="Ciudad Real" />
     <meta property="business:contact_data:postal_code" content="13640" />
     <meta property="business:contact_data:country_name" content="Spain" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mondejar_taxi" />
     <meta name="twitter:title" content="Taxis en Socuéllamos - Mondéjar Taxi" />
     <meta name="twitter:description" content="Traslados profesionales urbanos, interurbanos y a aeropuertos." />
     <meta name="twitter:image" content="https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png" />
+    <meta name="twitter:creator" content="@mondejar_taxi" />
 
+    <!-- Etiqueta canónica -->
     <link rel="canonical" href="https://mondejartaxisocuellamos.es/" />
 
+    <!-- Links adicionales para SEO -->
+    <link rel="alternate" hreflang="es" href="https://mondejartaxisocuellamos.es/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Preconnect a fuentes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -53,6 +75,7 @@
 
     <script type="module" src="/src/main.jsx"></script>
 
+    <!-- Schema.org JSON-LD - Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,6 +84,7 @@
           "@type": "LocalBusiness",
           "@id": "https://mondejartaxisocuellamos.es/#business",
           "name": "Mondéjar Taxi S.L.",
+          "alternateName": ["Mondejar Taxi", "Taxis Socuéllamos"],
           "image": {
             "@type": "ImageObject",
             "url": "https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png",
@@ -70,13 +94,16 @@
           "description": "Servicio profesional de taxis en Socuéllamos. Traslados urbanos, interurbanos, aeropuertos y servicios especiales disponibles 24 horas.",
           "url": "https://mondejartaxisocuellamos.es/",
           "telephone": "+34-690-871-080",
+          "email": "mondejartaxisl@gmail.com",
+          "priceRange": "€€",
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer service",
             "telephone": "+34-690-871-080",
-            "areaServed": ["Socuéllamos", "Ciudad Real", "Toledo", "Castilla-La Mancha"]
+            "email": "mondejartaxisl@gmail.com",
+            "areaServed": ["Socuéllamos", "Ciudad Real", "Toledo", "Castilla-La Mancha"],
+            "availableLanguage": ["es"]
           },
-          "priceRange": "€€",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Socuéllamos",
@@ -128,6 +155,7 @@
           "@type": "TaxiService",
           "@id": "https://mondejartaxisocuellamos.es/#taxi-service",
           "name": "Servicios de Taxi - Mondéjar Taxi",
+          "description": "Servicio de taxi profesional con conductores autorizados y vehículos modernos.",
           "provider": {
             "@type": "LocalBusiness",
             "@id": "https://mondejartaxisocuellamos.es/#business"
@@ -140,7 +168,8 @@
             "Special Events Transportation"
           ],
           "areaServed": "Socuéllamos, Ciudad Real",
-          "availableLanguage": "es"
+          "availableLanguage": "es",
+          "priceRange": "€€"
         },
         {
           "@type": "WebSite",
@@ -148,6 +177,7 @@
           "url": "https://mondejartaxisocuellamos.es/",
           "name": "Mondéjar Taxi - Taxis en Socuéllamos",
           "description": "Servicio profesional de taxis disponible 24 horas en Socuéllamos",
+          "inLanguage": "es",
           "publisher": {
             "@id": "https://mondejartaxisocuellamos.es/#business"
           },
@@ -159,6 +189,18 @@
             },
             "query-input": "required name=search_term_string"
           }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://mondejartaxisocuellamos.es/#organization",
+          "name": "Mondéjar Taxi S.L.",
+          "url": "https://mondejartaxisocuellamos.es/",
+          "logo": "https://mondejartaxisocuellamos.es/logo_mondejar_taxi.png",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61574288680782",
+            "https://www.instagram.com/socuellamosmondejartaxisl",
+            "https://www.tiktok.com/@mondejar.taxi"
+          ]
         }
       ]
     }

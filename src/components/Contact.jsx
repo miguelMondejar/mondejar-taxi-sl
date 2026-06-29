@@ -63,6 +63,20 @@ export default function Contact() {
           </a>
         </div>
       </div>
+
+      {/* Google Maps */}
+      <div className="mt-14 max-w-4xl mx-auto w-full rounded-2xl overflow-hidden shadow-lg">
+        <iframe
+          title="Ubicación de Mondéjar Taxi en Socuéllamos"
+          src="https://maps.google.com/maps?q=39.281954,-2.7857433&z=15&output=embed"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
     </section>
   );
 }

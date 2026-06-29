@@ -6,7 +6,7 @@ export default function Services() {
   const services = SERVICES_DATA;
 
   return (
-    <section className="py-20 px-6 bg-white-50" id="servicios">
+    <section className="py-20 px-6 bg-gray-50" id="servicios">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1E1E1E]">

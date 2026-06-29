@@ -7,6 +7,7 @@ import Tariffs from "./components/Tariffs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Car from "./components/Car";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 function App() {
   // Implementar SEO
@@ -28,6 +29,7 @@ function App() {
       <Car />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
